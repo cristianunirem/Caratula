@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.fondo1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fondo sacada de Uiverse.io*/
+    --color1: rgb(0, 3, 49);
+    --color2: rgb(248, 255, 182);
+    background-image:
+        linear-gradient(45deg, var(--color2) 25%, transparent 25%, transparent 75%, var(--color2) 75%, var(--color2)),
+        linear-gradient(135deg, var(--color2) 25%, var(--color1) 25%, var(--color1) 75%, var(--color2) 75%, var(--color2));
+    background-size: 90px 90px;
+    background-position: 0 0, 135px 135px;
+}
+
+.contenedor1 {
+    width: min(90vw, 600px);
+    max-height: 90vh;
+    padding: 2rem;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    overflow-y: auto;
+}
+
+.TituloA {
+    font-weight: 700;
+    color: #0033cc;
+    text-align: center;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.LineaA {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    border: none;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.TextoA {
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.5;
+}
+
+.EtiquetaA {
+    color: #0033cc;
+    font-weight: 700;
+}
+
+.contenedor1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
